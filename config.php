@@ -13,10 +13,22 @@ header("Expires: 0");
 // ---------------------------------------------
 // DATABASE CONNECTION
 // ---------------------------------------------
-$db_host = 'localhost';
-$db_name = 'blog_app';
-$db_user = 'root';
-$db_pass = '';
+
+// Try to load environment variables from .env file
+$env_path = __DIR__ . '/.env';
+if (file_exists($env_path)) {
+    $env = parse_ini_file($env_path);
+    $db_host = $env['DB_HOST'] ?? 'localhost';
+    $db_name = $env['DB_NAME'] ?? 'blog_app';
+    $db_user = $env['DB_USER'] ?? 'root';
+    $db_pass = $env['DB_PASS'] ?? '';
+} else {
+    // fallback defaults if .env not found
+    $db_host = 'localhost';
+    $db_name = 'blog_app';
+    $db_user = 'root';
+    $db_pass = '';
+}
 
 try {
     $pdo = new PDO("mysql:host=$db_host;dbname=$db_name;charset=utf8mb4", $db_user, $db_pass);
