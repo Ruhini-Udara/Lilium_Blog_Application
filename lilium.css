@@ -1,0 +1,119 @@
+body {
+      margin: 0;
+      font-family: 'Inter', 'Helvetica Neue', sans-serif;
+      background-color: #fff;
+      color: #242424;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.5rem 3rem;
+      border-bottom: 1px solid #121111ff;
+    }
+
+    .logo {
+      font-size: 2.5rem;
+      font-family: 'Noe Display', serif;
+      font-weight: 700;
+      color: #d63384;
+      letter-spacing: -0.5px;
+    }
+
+    .nav-buttons a {
+      text-decoration: none;
+      margin-left: 1rem;
+      padding: 0.5rem 1rem;
+      border-radius: 25px;
+      font-weight: 500;
+      transition: background 0.2s ease;
+    }
+
+    .login {
+      color: #242424;
+    }
+    .login:hover {
+      background: #f5f5f5;
+    }
+
+    .signup {
+      background: #d63384;
+      color: white;
+    }
+    .signup:hover {
+      background: #c21873;
+    }
+
+    main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 4rem 2rem;
+    }
+
+    h1 {
+      font-family: 'Noe Display', serif;
+      font-size: 4.5rem;
+      line-height: 1.2;
+      max-width: 700px;
+      margin: 0 auto 1rem;
+      font-weight: 700;
+    }
+
+    p {
+      color: #555;
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: 0 auto 2rem;
+    }
+
+    .cta-buttons a {
+      display: inline-block;
+      margin: 0.5rem;
+      padding: 0.8rem 1.6rem;
+      border-radius: 30px;
+      font-size: 1rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+
+    .cta-register {
+      background: #d63384;
+      color: white;
+    }
+    .cta-register:hover {
+      background: #c21873;
+    }
+
+    .cta-login {
+      border: 1px solid #d63384;
+      color: #d63384;
+    }
+    .cta-login:hover {
+      background: #ffe6f1;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      border-top: 1px solid #0e0d0dff;
+      font-size: 0.9rem;
+      color: #777;
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2.2rem;
+      }
+      main {
+        padding: 3rem 1.5rem;
+      }
+    }

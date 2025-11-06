@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background:  #1a1a1a;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container {
+    background: #fff;
+    padding: 48px 36px;
+    border-radius: 16px;
+    box-shadow: 0 6px 24px rgba(0,0,0,0.15);
+    width: 380px;
+    transition: transform 0.3s ease;
+}
+
+.login-container:hover {
+    transform: translateY(-3px);
+}
+
+h2 {
+    font-size: 28px;
+    text-align: center;
+    font-family: 'Noe Display', serif;
+    color: #000000;
+    margin-bottom: 24px;
+    letter-spacing: 0.3px;
+}
+
+form input {
+    width: 100%;
+    padding: 12px 15px;
+    margin: 10px 0 16px 0;
+    border: 1px solid #d1d1d1;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    background-color: #fafafa;
+    font-size: 15px;
+}
+
+form input:focus {
+    border-color: #ff4d8d;
+    box-shadow: 0 0 6px rgba(255, 77, 141, 0.3);
+    outline: none;
+}
+
+/* Button */
+button {
+    width: 100%;
+    padding: 12px;
+    background: #111;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background: #ff4d8d;
+    transform: translateY(-1px);
+}
+
+/* Error message */
+.error-message {
+    color: #b00020;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 0.95rem;
+}
+
+.login-link {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 0.95rem;
+}
+
+.login-link a {
+    color: #111;
+    text-decoration: none;
+    font-weight: 600;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.2s, color 0.2s;
+}
+
+.login-link a:hover {
+    color: #ff4d8d;
+    border-color: #ff4d8d;
+}
+
+/* Toggle password style */
+#togglePassword {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #555;
+    font-weight: 600;
+    font-size: 0.9rem;
+    user-select: none;
+    transition: color 0.3s;
+}
+
+#togglePassword:hover {
+    color: #ff4d8d;
+}
+
+input[type="password"] {
+    padding-right: 55px;
+
+}
+
+/* Remember Me styling */
+.remember-me {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 10px 0;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.95rem;
+    color: #333;
+}
+
+.remember-me input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    accent-color: #d63384; /* gives the checkbox the brand color */
+    cursor: pointer;
+}
+
+.remember-me label {
+    cursor: pointer;
+}
+
+
