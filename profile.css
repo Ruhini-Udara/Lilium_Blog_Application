@@ -148,6 +148,7 @@ body {
 /* === BLOG CARD === */
 .blog-card {
   display: flex;
+  width: 1050;
   align-items: flex-start;
   justify-content: space-between;
   gap: 20px;
